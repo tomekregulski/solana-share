@@ -1,0 +1,12 @@
+[programs.devnet]
+staking = "shdZ5TeWXcyS99xZ88CPcQ8PCDR3eknk56S3acrB4gm"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/tomekregulski/desktop/solana/dev-wallet/dev-deploy-wallet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

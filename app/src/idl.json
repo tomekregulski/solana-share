@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "name": "staking",
+  "instructions": [
+    {
+      "name": "transferToken",
+      "accounts": [
+        {
+          "name": "sender",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "senderToken",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "receiverToken",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "mint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    }
+  ],
+  "metadata": {
+    "address": "shdZ5TeWXcyS99xZ88CPcQ8PCDR3eknk56S3acrB4gm"
+  }
+}
