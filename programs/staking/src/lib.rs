@@ -6,7 +6,7 @@ declare_id!("shdZ5TeWXcyS99xZ88CPcQ8PCDR3eknk56S3acrB4gm");
 #[program]
 pub mod staking {
     use super::*;
-    pub fn transfer_token(ctx: Context<TransferToken>) -> ProgramResult {
+    pub fn transfer_token(ctx: Context<TransferToken>) -> Result<()> {
             msg!("starting tokens: {}");
             token::transfer(ctx.accounts.transfer_ctx(), 1)?;
             msg!("token transfer succeeded");

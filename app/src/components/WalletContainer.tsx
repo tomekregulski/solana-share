@@ -5,7 +5,10 @@ import {
   WalletMultiButton,
 } from '@solana/wallet-adapter-react-ui';
 
-import { TOKEN_PROGRAM_ID, Token } from '@solana/spl-token';
+import {
+  TOKEN_PROGRAM_ID,
+  Token,
+} from '@solana/spl-token';
 
 import { clusterApiUrl, Connection, PublicKey } from '@solana/web3.js';
 import { Program, Provider } from '@project-serum/anchor';
@@ -68,6 +71,43 @@ const MyWallet: React.FC = () => {
 
   const testATA = async () => {
     console.log('testing ATA');
+    // const toPk = new PublicKey(receiverPk);
+
+    // let fromAta = await getAssociatedTokenAddress(
+    //   TEST_MINT_PK, // mint
+    //   provider.wallet.publicKey // owner
+    // );
+    // console.log(`ATA: ${fromAta.toBase58()}`);
+
+    // let toAta = await getAssociatedTokenAddress(
+    //   TEST_MINT_PK, // mint
+    //   toPk // owner
+    // );
+    // console.log(`ATA: ${toAta.toBase58()}`);
+
+    // let fromTx = new Transaction().add(
+    //   createAssociatedTokenAccountInstruction(
+    //     localAccount.publicKey, // payer
+    //     fromAta, // ata
+    //     provider.wallet.publicKey, // owner
+    //     TEST_MINT_PK // mint
+    //   )
+    // );
+    // console.log(
+    //   `txhash: ${await connection.sendTransaction(fromTx, [localAccount])}`
+    // );
+
+    // let toTx = new Transaction().add(
+    //   createAssociatedTokenAccountInstruction(
+    //     localAccount.publicKey, // payer
+    //     toAta, // ata
+    //     toPk, // owner
+    //     TEST_MINT_PK // mint
+    //   )
+    // );
+    // console.log(
+    //   `txhash: ${await connection.sendTransaction(toTx, [localAccount])}`
+    // );
   };
 
   const initiateTransferToken = async () => {
